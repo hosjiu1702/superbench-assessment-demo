@@ -29,6 +29,10 @@
 ```
 source superbench-venv/bin/activate
 ```
+and do not forget installing the required packages from the `requirements.txt` as below:
+```
+pip install -r requirements.txt
+```
 
 2. Then, start the _FastAPI-based_ chatbot service with this command:
 ```
