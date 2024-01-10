@@ -16,7 +16,7 @@
 
 
 ### Chatbot service
-- __FastAPI__ for create RESTful API endpoint.
+- __FastAPI__ for creating RESTful API endpoint.
 
 
 ### Tools
