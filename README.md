@@ -5,7 +5,7 @@
 </p>
 
 
-## Components
+## Components & Miscs
 
 ### LLM
 - [2 bit GGUF-based quantized model](https://huggingface.co/TheBloke/phi-2-GGUF) __(phi-2)__ from this incredible user [(@TheBlock)](https://huggingface.co/TheBloke) on the HuggingFace model hub.
