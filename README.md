@@ -1,7 +1,14 @@
+##  Overview
+
+<p align="center">
+    <img src="diagram.png">
+</p>
+
+
 ## Components
 
 ### LLM
-- [2 bit GGUF-based quantized model](https://huggingface.co/TheBloke/phi-2-GGUF) from this incredible user [(@TheBlock)](https://huggingface.co/TheBloke) on the HuggingFace model hub.
+- [2 bit GGUF-based quantized model](https://huggingface.co/TheBloke/phi-2-GGUF) __(phi-2)__ from this incredible user [(@TheBlock)](https://huggingface.co/TheBloke) on the HuggingFace model hub.
 
 
 ### Serving
@@ -34,5 +41,3 @@ uvicorn server/server:chatbot_app
 ```
 
 __Voila!__, now just testing the API with your favorite tool.
-
-You could quickly checkout this demo in the `demo/` folder.
