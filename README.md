@@ -56,3 +56,5 @@ __Voila!__, now just testing the API with your favorite tool.
 <p align="center">
     <img src="demo/demo.gif">
 </p>
+
+_p/s: for the interviewer, you could find full of this demo video under the `demo` folder._
