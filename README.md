@@ -53,4 +53,6 @@ __Voila!__, now just testing the API with your favorite tool.
 
 
 ## Quick Demo
-<video src="demo/demo.mp4">
+<p align="center">
+    <img src="demo/demo.gif">
+</p>
