@@ -53,4 +53,4 @@ __Voila!__, now just testing the API with your favorite tool.
 
 
 ## Quick Demo
-<video src="demo/demo.mp4">
+<video src="https://github.com/hosjiu1702/superbench-assessment-demo/raw/master/demo/demo.mp4"></video>
