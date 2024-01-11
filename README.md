@@ -50,3 +50,7 @@ uvicorn server/server:chatbot_app
 ```
 
 __Voila!__, now just testing the API with your favorite tool.
+
+
+## Quick Demo
+<video src="demo/demo.mp4">
