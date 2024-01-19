@@ -57,9 +57,5 @@ uvicorn server.server:chatbot_app
 __Voila!__, now just testing the API with your favorite tool.
 
 
-## Quick Demo
-<p align="center">
-    <img src="demo/demo.gif">
-</p>
-
-_p/s: for the interviewer, you could find full of this demo video under the `demo` folder._
+## Demo
+[link demo](https://drive.google.com/file/d/1FvP5gAIL-UmxMgUrXyIvauhM1eps_z-g/view?usp=sharing) (Google Drive)
