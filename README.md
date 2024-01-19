@@ -6,7 +6,7 @@
 
 I do not want to use any proprietary LLMs such as GPT-4, Claude-2,...
 
-So I decided to come up with Open Source model and ended up with the __NexusRavenV2__ which is an open LLM that is even better GPT-4 in _function calling_ capability which is the final purpose of this test.
+So I decided to come up with Open Source model and ended up with the [__NexusRavenV2__](https://nexusflow.ai/blogs/ravenv2) which is an open LLM that is even better GPT-4 in _function calling_ capability which is the final purpose of this test.
 
 __All of this work is done at local machine from client to server side (includes LLM) and it's run on Azure VM for faster inference (8 cores + 32GB RAM) as well as hosting the 8-bit quantized NexusRavenV2 13B params.__
 
