@@ -4,11 +4,15 @@
     <img src="diagram.png">
 </p>
 
+I do not want to use any proprietary LLMs such as GPT-4, Claude-2,...
+
+So I decided to come up with Open Source model and ended up with the __NexusRavenV2__ which is an open LLM that is even better GPT-4 in _function calling_ capability which is the final purpose of this test.
+
 
 ## Components & Miscs
 
 ### LLM
-- [2 bit GGUF-based quantized model](https://huggingface.co/TheBloke/phi-2-GGUF) __(phi-2)__ from this incredible user [(@TheBlock)](https://huggingface.co/TheBloke) on the HuggingFace model hub.
+- [8 bit GGUF-based quantized model](https://huggingface.co/TheBloke/NexusRaven-V2-13B-GGUF) __(NexusRavenV2)__ from this incredible user [(@TheBlock)](https://huggingface.co/TheBloke) on the HuggingFace model hub.
 
 
 ### Serving
@@ -22,7 +26,7 @@
 ### Tools
 - __Postman__ for interactive API testing environment.
 - __tmux__ for conventional terminal screen splitting.
-- __git-lfs__ for pushing the above quantized Phi-2 model to Github server.
+- __git-lfs__ for pushing the above LLM to Github server.
 
 ## How to run?
 1. Firstly, activate your virtual environment. In my case is:
@@ -36,17 +40,18 @@ pip install -r requirements.txt
 
 2. You need to download the model from HuggingFace hub using `huggingface-cli` tool:
 ```
-huggingface-cli download TheBloke/phi-2-GGUF phi-2.Q2_K.gguf --local-dir llm/models --local-dir-use-symlinks False
+huggingface-cli download TheBloke/NexusRaven-V2-13B-GGUF nexusraven-v2-13b.Q8_0.gguf --local-dir . --local-dir-use-symlinks False
+
 ```
 
 3. Then, start the _FastAPI-based_ chatbot service with this command:
 ```
-uvicorn server/server:chatbot_app
+uvicorn server.server:chatbot_app
 ```
 
 4. Finally, kick off the prebuilt _llama.cpp_ server
 ```
-./llm/ext_lib/llama.cpp/server -ngl 32 -c 256 -m llm/models/phi-2.Q2_K.gguf
+./llm/ext_lib/llama.cpp/server -ngl 32 -c 256 -m llm/models/nexusraven-v2-13b.Q8_0.gguf
 ```
 
 __Voila!__, now just testing the API with your favorite tool.
